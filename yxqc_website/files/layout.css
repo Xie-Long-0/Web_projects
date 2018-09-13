@@ -1,22 +1,4 @@
 
-#body_style {
-	background: #fcfcfc;
-	font-family: "微软雅黑", "新宋体";
-	font-size: 12pt;
-	line-height: 120%;
-	margin: 0;
-	padding: 0;
-	color: #222222;
-	text-align: center;
-}
-
-a, a:visited {
-	text-decoration: none;
-	color: unset;
-}
-
-a:hover { color: #0090FF; }
-
 #container {width: 800px; text-align: left; margin: 0 auto; }
 
 #header {
@@ -51,8 +33,8 @@ a:hover { color: #0090FF; }
 #menu li a:hover { background-color: #0094FF; color: #fefffe; }
 
 #menu li span {
-	font-family: "楷体", "新宋体";
-	font-size: 16pt;
+	font-family: "楷体", "华文楷体";
+	font-size: 0.75rem;
 	position: relative;
 	top: 5px;
 }
@@ -89,11 +71,4 @@ img { border: none; }
 	width: 97%;
 	display: block;
 }
-
-/*------------ hr bug --------------*/
-div.redrule {height: 1px; background:#e6e6e6; clear: both; }
-
-div.redrule hr {display: none;}
-
-div.redrule * {display: none;}
 
