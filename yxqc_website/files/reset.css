@@ -105,13 +105,14 @@ p {
 }
 
 a {
-    color: #0060aa;
+    color: #00a0fa;
     text-decoration: none;
     background-color: transparent;
 }
 
 a:hover {
-	color: #0090ee;
+	color: #00ddfa;
+    text-decoration: none;
     outline: 0;
 }
 
