@@ -1,9 +1,14 @@
-<?php
-include "index.html";
-?>
-
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="all.css" />
+</head>
+<body>
 	<h3>查看留言</h3>
-	<table id="show" border="1" cellspacing="1" width="80%">
+	<table id="show" border="1" cellspacing="1" width="90%">
 		<tr>
 			<th>留言标题</th>
 			<th>留言者</th>
@@ -31,7 +36,7 @@ include "index.html";
 			}
 		}
 		?>
-		
+
 	</table>
 
 </body>
@@ -39,8 +44,9 @@ include "index.html";
 
 <script>
 function dodel(id) {
-	if (confirm("确定要删除吗？"))
+	if (confirm("确定要删除吗？")) {
 		window.location = "del.php?id=" + id;
+	}
 }
 
 </script>

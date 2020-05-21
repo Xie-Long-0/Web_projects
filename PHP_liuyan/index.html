@@ -2,42 +2,29 @@
 <html lang="zh">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>我的留言板</title>
-	<style>
-
-body {
-	text-align: center;
-}
-
-hr {
-	width: 90%;
-}
-
-#index {
-	font-size: 18pt;
-	margin-left: 25%;
-}
-
-#show {
-	margin-left: 10%;
-}
-
-.table_left {
-	text-align: right;
-	vertical-align: top;
-}
-
-.table_right {
-	text-align: left;
-	vertical-align: top;
-}
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="../normalize.css">
+	<link rel="stylesheet" type="text/css" href="all.css" />
 </head>
 
 <body>
-	<h2>我的留言板</h2>
-	<a href="index.php">添加留言</a>
-	<a href="show.php">查看留言</a>
-	<hr/>
+	<header>
+		<h2>我的留言板</h2>
+		<nav>
+			<a href="add.php" target="view_frame">添加留言</a> |
+			<a href="show.php" target="view_frame">查看留言</a>
+		</nav>
+	</header>
+	<hr />
 
+	<iframe name="view_frame" src="" width="90%" scrolling="no" frameborder="0" onload="frame_load(this);"></iframe>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	function frame_load(obj) {
+		obj.height = obj.contentDocument.all[0].offsetHeight;	//调整iframe高度
+	}
+</script>
